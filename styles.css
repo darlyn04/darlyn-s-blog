@@ -1,0 +1,233 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffb3d9, #ff80bf); /* Lighter pink gradient background */
+    color: #5f4b8b; /* Dark purple text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ff66b3; /* Lighter pink for nav */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffb3d9; /* Softer pink on hover */
+    transform: translateY(-5px); /* Floating effect */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: linear-gradient(to right, #ffb3d9, #ff80bf); /* Lighter pink gradient for header */
+    padding: 40px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 42px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}
+
+/* Section Styles */
+section {
+    padding: 30px;
+    margin: 30px;
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+section:hover {
+    background-color: #ffe6f2; /* Light pink on hover */
+}
+
+section h1, section h2 {
+    color: #ff66b3; /* Softer pink for headings */
+    font-size: 28px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Paragraph and Text Styling */
+section p {
+    color: #5f4b8b; /* Dark purple for body text */
+    font-size: 18px;
+    margin: 15px 0;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+/* Links */
+a {
+    color: #ff80bf;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ff66b3; /* Darker pink on hover */
+}
+
+/* Button Styles */
+button {
+    background-color: #ff80bf;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    width: auto; /* Button width will auto adjust based on content */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #ff66b3; /* Slightly darker pink for hover */
+    transform: scale(1.1); /* Increased zoom effect */
+}
+
+/* Active Button Effect (when clicked) */
+button:active {
+    transform: scale(0.95); /* Slight shrink effect on click */
+}
+
+/* Form Styling */
+form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffe6f2; /* Lighter pink form background */
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    color: #ff66b3; /* Softer pink for labels */
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #ff80bf; /* Light pink border */
+    font-size: 16px;
+    color: #5f4b8b;
+    transition: border-color 0.3s ease-in-out;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ff66b3; /* Darker pink on focus */
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Images */
+section img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ffb3d9, #ff80bf); /* Lighter pink gradient footer */
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    section h1, section h2 {
+        font-size: 24px;
+    }
+
+    button {
+        width: 100%; /* Full width button on mobile */
+        padding: 14px;
+        font-size: 20px;
+    }
+
+    form input, form textarea {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* Special Hover Effects for Floating Elements */
+.floating:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+}
