@@ -1,233 +1,168 @@
-/* General Body Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #ffb3d9, #ff80bf); /* Lighter pink gradient background */
-    color: #5f4b8b; /* Dark purple text */
+/* === Base Reset === */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
-/* Navigation Bar */
-nav {
-    background-color: #ff66b3; /* Lighter pink for nav */
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f6f1eb;
+    color: #3e2c1c;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* === Header / Nav === */
+header {
+    background-color: #e8d8c3;
+    border-bottom: 3px double #a98c6d;
+    padding: 1rem 0;
 }
 
 nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    gap: 1.5rem;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
+nav a {
     text-decoration: none;
-    font-size: 18px;
+    color: #5c4432;
     font-weight: bold;
-    text-transform: uppercase;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-family: 'Courier Prime', monospace;
+    padding: 5px 10px;
+    border: 1px solid #b6a28f;
+    background-color: #fffaf3;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ffb3d9; /* Softer pink on hover */
-    transform: translateY(-5px); /* Floating effect */
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+nav a:hover {
+    background-color: #d6c1aa;
+    color: #2e1c0f;
 }
 
-/* Header */
-header {
+/* === Page Content Styling === */
+.page-content {
     text-align: center;
-    background: linear-gradient(to right, #ffb3d9, #ff80bf); /* Lighter pink gradient for header */
-    padding: 40px 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1rem;
 }
 
-header h1 {
-    font-size: 42px;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    letter-spacing: 2px;
+.page-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #5e3e2d;
 }
 
-/* Section Styles */
-section {
-    padding: 30px;
-    margin: 30px;
-    background-color: #ffffff; /* White background for sections */
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease-in-out;
+.page-content h2 {
+    font-size: 1.2rem;
+    color: #3e2c1c;
+    margin-bottom: 1rem;
 }
 
-section:hover {
-    background-color: #ffe6f2; /* Light pink on hover */
-}
-
-section h1, section h2 {
-    color: #ff66b3; /* Softer pink for headings */
-    font-size: 28px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-}
-
-/* Paragraph and Text Styling */
-section p {
-    color: #5f4b8b; /* Dark purple for body text */
-    font-size: 18px;
-    margin: 15px 0;
-    line-height: 1.7;
-    letter-spacing: 1px;
-}
-
-/* Links */
-a {
-    color: #ff80bf;
+.order-btn {
+    display: inline-block;
+    background-color: #cab9a0;
+    color: #2f1c10;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    border: 1px solid #a18973;
+    font-family: 'Courier Prime', monospace;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s ease;
 }
 
-a:hover {
-    color: #ff66b3; /* Darker pink on hover */
+.order-btn:hover {
+    background-color: #bfa891;
+    color: #1e1208;
 }
 
-/* Button Styles */
-button {
-    background-color: #ff80bf;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 18px;
-    font-weight: bold;
+/* === Product Grid === */
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.product-card {
+    background-color: #fffaf3;
+    padding: 1rem;
     border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    display: inline-block;
+    border: 1px solid #e1d3c2;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     text-align: center;
-    width: auto; /* Button width will auto adjust based on content */
 }
 
-/* Button Hover Effect */
-button:hover {
-    background-color: #ff66b3; /* Slightly darker pink for hover */
-    transform: scale(1.1); /* Increased zoom effect */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
 }
 
-/* Active Button Effect (when clicked) */
-button:active {
-    transform: scale(0.95); /* Slight shrink effect on click */
+.product-card p {
+    font-size: 1rem;
+    font-family: 'Courier Prime', monospace;
+    color: #4b3621;
 }
 
-/* Form Styling */
-form {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #ffe6f2; /* Lighter pink form background */
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+/* === Responsive Layout === */
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-form label {
-    display: block;
-    font-size: 18px;
-    color: #ff66b3; /* Softer pink for labels */
-    margin-bottom: 10px;
+/* === Additional Responsive Adjustments === */
+@media (min-width: 768px) {
+    nav ul {
+        gap: 2rem;
+    }
 }
-
-form input, form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
+/* === Contact Page Styling === */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: #fffaf3;
     border-radius: 8px;
-    border: 2px solid #ff80bf; /* Light pink border */
-    font-size: 16px;
-    color: #5f4b8b;
-    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #e1d3c2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-form input:focus, form textarea:focus {
-    border-color: #ff66b3; /* Darker pink on focus */
-    outline: none;
+.contact-detail h3 {
+    color: #5e3e2d;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
 }
 
-form textarea {
-    resize: vertical;
-    min-height: 150px;
+.contact-detail p,
+.contact-link {
+    font-family: 'Courier Prime', monospace;
+    color: #4b3621;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
-/* Images */
-section img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+.contact-link:hover {
+    text-decoration: underline;
+    color: #2e1c0f;
 }
 
-section img:hover {
-    transform: scale(1.05); /* Zoom effect on hover */
-}
 
-/* Footer Section */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(to right, #ffb3d9, #ff80bf); /* Lighter pink gradient footer */
-    color: white;
-    font-size: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-footer p {
-    margin: 0;
-    font-size: 18px;
-}
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
 
-    section {
-        margin: 20px;
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 30px;
-    }
-
-    section h1, section h2 {
-        font-size: 24px;
-    }
-
-    button {
-        width: 100%; /* Full width button on mobile */
-        padding: 14px;
-        font-size: 20px;
-    }
-
-    form input, form textarea {
-        font-size: 18px;
-    }
-
-    footer {
-        font-size: 14px;
-    }
-}
-
-/* Special Hover Effects for Floating Elements */
-.floating:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s ease-in-out;
-}
