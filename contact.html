@@ -3,42 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | La Ledah Les Vêtements</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Contact | Darlyn's Spiritual Journey</title>
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="accessories.html">ACCESSORIES</a></li>
-            <li><a href="pants.html">BOTTOMS</a></li>
-            <li><a href="tops.html">TOPS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="devotion.html">Devotion</a></li>
+            <li><a href="personal.html">My Ministries</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Page Content -->
-    <div class="page-content">
-        <h1>Contact Us</h1>
-        <h2>We'd love to hear from you!</h2>
+    <header>
+        <h1>♡ Contact Me ♡</h1>
+        <p class="tagline">"I'd love to connect with you!"</p>
+    </header>
 
-        <div class="contact-section">
-            <div class="contact-detail">
-                <h3>Facebook</h3>
-                <a href="https://www.facebook.com/jhet.esperancilla/" target="_blank" class="contact-link">La Ledah Les Vêtements</a>
-            </div>
-            <div class="contact-detail">
-                <h3>Email</h3>
-                <p>esperancillajulieta33@gmail.com</p>
-            </div>
-            <div class="contact-detail">
-                <h3>Phone</h3>
-                <p>(+63) 967-497-2453</p>
-            </div>
+    <main class="contact-content">
+        <div class="contact-card">
+            <h2>📌 Facebook</h2>
+            <p><a href="https://www.facebook.com/dar.lyn.54379" target="_blank">Darlyn Monteclaro</a></p>
         </div>
-    </div>
+
+        <div class="contact-card">
+            <h2>📞 Phone Number</h2>
+            <p>0994-405-6053</p>
+        </div>
+
+        <div class="contact-card">
+            <h2>🏠 Address</h2>
+            <p>124 Christian St., Bacoor, Cavite City</p>
+        </div>
+
+        <blockquote class="prayer-quote">
+            "Prayer is the most powerful weapon we have. It is the key to God's heart."
+        </blockquote>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Darlyn's Blog | With Love & Grace ♡</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-menu").classList.toggle("show");
+        }
+    </script>
 
 </body>
 </html>

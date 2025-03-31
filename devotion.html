@@ -4,27 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Devotion</title>
+    <title>Devotion | Darlyn's Spiritual Journey</title>
 </head>
 <body>
+
     <nav>
-        <ul>
+        <ul id="nav-menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="devotion.html">Devotion</a></li>
+            <li><a href="devotion.html" class="active">Devotion</a></li>
             <li><a href="personal.html">My Ministries</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <section>
-        <h1>Devotion</h1>
-        <h2>Philippians 4:13: I can do all things through Christ who strengthens me.</h2>
-        <p>This verse teaches that God can help us overcome challenges and give us courage in difficult times.</p>
-        <h2>Ecclesiastes 3:1: To everything there is a season, and a time to every purpose under the heaven.</h2>
-        <p>This verse provides comfort and patience, especially during difficult times, as it reassures us that God has a plan and timing for everything.</p>
-        <h2>1 John 4:19: We love Him because He first loved us.</h2>
-        <p>God's love is the foundation and reason for our love. Our ability to love others flows from the fact that God loved us first.</p>
-    </section>
+    <header>
+        <h1>♡ Devotion ♡</h1>
+        <p class="tagline">"Finding strength and love in His word."</p>
+    </header>
+
+    <main class="devotion-content">
+        <div class="devotion-card">
+            <h2>Philippians 4:13</h2>
+            <p><i>"I can do all things through Christ who strengthens me."</i></p>
+            <p>This verse teaches that God can help us overcome challenges and give us courage in difficult times.</p>
+        </div>
+
+        <div class="devotion-card">
+            <h2>Ecclesiastes 3:1</h2>
+            <p><i>"To everything there is a season, and a time to every purpose under the heaven."</i></p>
+            <p>This verse provides comfort and patience, reminding us that God has a plan for everything.</p>
+        </div>
+
+        <div class="devotion-card">
+            <h2>1 John 4:19</h2>
+            <p><i>"We love Him because He first loved us."</i></p>
+            <p>God's love is the foundation of our love. Our ability to love others flows from the fact that He loved us first.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Darlyn's Blog | With Love & Grace ♡</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-menu").classList.toggle("show");
+        }
+    </script>
+
 </body>
 </html>

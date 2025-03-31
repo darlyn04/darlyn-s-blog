@@ -1,168 +1,344 @@
-/* === Base Reset === */
+/* General Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Playfair Display', serif; /* Elegant, vintage-style font */
 }
 
 body {
-    font-family: 'Georgia', serif;
-    background-color: #f6f1eb;
-    color: #3e2c1c;
-    line-height: 1.6;
+    background-color: #fff5f8; /* Soft blush pink */
+    color: #4a2c2a; /* Warm brown for vintage feel */
+    text-align: center;
     padding: 20px;
 }
 
-/* === Header / Nav === */
-header {
-    background-color: #e8d8c3;
-    border-bottom: 3px double #a98c6d;
-    padding: 1rem 0;
+/* Navigation */
+nav ul {
+    list-style: none;
+    background-color: #fbd4de; /* Pastel pink */
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-nav ul {
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a2c2a;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #e8a4b5; /* Rosy pink */
+    color: white;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Header */
+header {
+    background: linear-gradient(to bottom, #fbd4de, #fff5f8);
+    color: #4a2c2a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-style: italic;
+}
+
+/* Main Content */
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Image */
+.banner-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 5px solid #fbd4de; /* Soft pink border */
+}
+
+/* Responsive Image */
+@media (max-width: 768px) {
+    .banner-image {
+        max-height: 200px;
+    }
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    background-color: #e8a4b5;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #c77d8e; /* Deep rose pink */
+}
+
+/* Make Button Full Width on Mobile */
+@media (max-width: 600px) {
+    .cta-button {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background-color: #fbd4de;
+    color: #4a2c2a;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Responsive Font Size */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* General Styling (from homepage styles) */
+
+/* Devotion Page Styling */
+.devotion-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.devotion-card {
+    background: #fff5f8;
+    border-left: 5px solid #e8a4b5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.devotion-card h2 {
+    color: #c77d8e;
+    font-size: 22px;
+}
+
+.devotion-card p {
+    font-size: 16px;
+    color: #4a2c2a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .devotion-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .devotion-card {
+        padding: 15px;
+    }
+
+    .devotion-card h2 {
+        font-size: 20px;
+    }
+}
+/* Contact Page Styling */
+.contact-content {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-card {
+    background: #fff5f8;
+    border-left: 5px solid #e8a4b5;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.contact-card h2 {
+    color: #c77d8e;
+    font-size: 22px;
+}
+
+.contact-card p {
+    font-size: 16px;
+    color: #4a2c2a;
+}
+
+/* Link Styling */
+.contact-card a {
+    text-decoration: none;
+    color: #e8a4b5;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-card a:hover {
+    color: #c77d8e;
+}
+
+/* Prayer Quote */
+.prayer-quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #4a2c2a;
+    padding: 15px;
+    border-left: 5px solid #e8a4b5;
+    background: #fff5f8;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contact-card {
+        padding: 10px;
+    }
+
+    .contact-card h2 {
+        font-size: 20px;
+    }
+
+    .prayer-quote {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+/* My Ministries Page */
+.ministries-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Ministry Section */
+.ministry {
+    margin-bottom: 30px;
+}
+
+.ministry h2 {
+    font-size: 22px;
+    color: #8b5e83; /* Soft pinkish-purple */
+    margin-bottom: 10px;
+}
+
+.ministry p {
+    font-size: 16px;
+    color: #4a2c2a;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Image Styling */
+.ministry-images {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    list-style: none;
-    gap: 1.5rem;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #5c4432;
-    font-weight: bold;
-    font-family: 'Courier Prime', monospace;
-    padding: 5px 10px;
-    border: 1px solid #b6a28f;
-    background-color: #fffaf3;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+.ministry-images img {
+    width: 100%;
+    max-width: 300px; /* Keeps images at a balanced size */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-nav a:hover {
-    background-color: #d6c1aa;
-    color: #2e1c0f;
+/* Hover Effect */
+.ministry-images img:hover {
+    transform: scale(1.05);
 }
 
-/* === Page Content Styling === */
-.page-content {
-    text-align: center;
-    padding: 2rem 1rem;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ministries-content {
+        width: 90%;
+        padding: 15px;
+    }
 
-.page-content h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: #5e3e2d;
-}
-
-.page-content h2 {
-    font-size: 1.2rem;
-    color: #3e2c1c;
-    margin-bottom: 1rem;
-}
-
-.order-btn {
-    display: inline-block;
-    background-color: #cab9a0;
-    color: #2f1c10;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    border: 1px solid #a18973;
-    font-family: 'Courier Prime', monospace;
-    margin-bottom: 2rem;
-    transition: background-color 0.3s ease;
-}
-
-.order-btn:hover {
-    background-color: #bfa891;
-    color: #1e1208;
-}
-
-/* === Product Grid === */
-.product-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-.product-card {
-    background-color: #fffaf3;
-    padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid #e1d3c2;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    text-align: center;
-}
-
-.product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin-bottom: 0.5rem;
-}
-
-.product-card p {
-    font-size: 1rem;
-    font-family: 'Courier Prime', monospace;
-    color: #4b3621;
-}
-
-/* === Responsive Layout === */
-@media (min-width: 768px) {
-    .product-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .ministry-images img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
-/* === Additional Responsive Adjustments === */
-@media (min-width: 768px) {
-    nav ul {
-        gap: 2rem;
+@media (max-width: 480px) {
+    .ministries-content {
+        width: 95%;
+    }
+
+    .ministry-images img {
+        height: 180px;
     }
 }
-/* === Contact Page Styling === */
-.contact-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    background-color: #fffaf3;
-    border-radius: 8px;
-    border: 1px solid #e1d3c2;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.contact-detail h3 {
-    color: #5e3e2d;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    margin-bottom: 0.4rem;
-}
-
-.contact-detail p,
-.contact-link {
-    font-family: 'Courier Prime', monospace;
-    color: #4b3621;
-    font-size: 1rem;
-    text-decoration: none;
-}
-
-.contact-link:hover {
-    text-decoration: underline;
-    color: #2e1c0f;
-}
-
-
-
-
 

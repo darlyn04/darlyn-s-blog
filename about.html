@@ -4,27 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>ABOUT ME</title>
+    <title>About Me | Darlyn's Spiritual Journey</title>
 </head>
 <body>
+
     <nav>
-        <ul>
+        <ul id="nav-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="devotion.html">Devotion</a></li>
             <li><a href="personal.html">My Ministries</a></li>
-            <li><a href="about.html">About Me</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <section>
-        <h2>Hi! I'm Darlyn Monteclaro, I also serve as a teacher, musician, and choir member in our church. I've been part of Doulos Baptist Church.</h2>
-        <img src="https://i.pinimg.com/736x/01/f0/c6/01f0c66722f76a2b7a640f51edb042c6.jpg" alt="Image 1" height="300px">
-        <p>Many people I've met have truly become my friends and have stood as my father and mother in the church. Because of them, I've learned so much. I am very blessed to be part of the DBC family.</p>
-        <img src="https://i.pinimg.com/736x/b5/45/3f/b5453f0dd8b613aba31552810747c017.jpg" alt="Image 2" height="250px">
-        <img src="https://i.pinimg.com/736x/02/c5/85/02c58517b392b867afa46693e7bfd1ff.jpg" alt="Image 3" height="200px">
-        <img src="https://i.pinimg.com/736x/78/90/f1/7890f1267d15c1a29856db8882f10890.jpg" alt="Image 4" height="200px">
-        <p>Let me share with you how I was saved. Through the guidance of our Pastor Roreinz Faniega, he taught us that we must accept Jesus Christ as our Lord and Savior to receive salvation. We all know that we are sinners, and now is the time for us to be saved, kapatid.</p>
-    </section>
+    <header>
+        <h1>♡ About Me ♡</h1>
+        <p class="tagline">"A heart dedicated to faith, music, and teaching."</p>
+    </header>
+
+    <main class="about-content">
+        <div class="intro">
+            <p>Hi! I'm <strong>Darlyn Monteclaro</strong>, a dedicated teacher, musician, and choir member in our church. I am blessed to be part of <strong>Doulos Baptist Church</strong>, where I continue to grow in faith and service.</p>
+        </div>
+
+        <div class="about-images">
+            <img src="https://i.pinimg.com/736x/01/f0/c6/01f0c66722f76a2b7a640f51edb042c6.jpg" alt="Darlyn at church" width="150px" height="250">
+            <img src="https://i.pinimg.com/736x/b5/45/3f/b5453f0dd8b613aba31552810747c017.jpg" alt="Church Community" height="150" width="px">
+            <img src="https://i.pinimg.com/736x/02/c5/85/02c58517b392b867afa46693e7bfd1ff.jpg" alt="Worship Moment">
+            <img src="https://i.pinimg.com/736x/78/90/f1/7890f1267d15c1a29856db8882f10890.jpg" alt="Choir Performance">
+        </div>
+
+        <div class="story">
+            <p>Many people I've met have truly become my friends and family in Christ. Because of them, I have learned so much, and I feel incredibly blessed to be part of the <strong>DBC family.</strong></p>
+            <p>Let me share with you how I was saved. Through the guidance of our <strong>Pastor Roreinz Faniega</strong>, I learned that we must accept Jesus Christ as our Lord and Savior to receive salvation. We all know that we are sinners, and now is the time for us to be saved, kapatid. 💖</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Darlyn's Blog | With Love & Grace ♡</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-menu").classList.toggle("show");
+        }
+    </script>
+
 </body>
 </html>
